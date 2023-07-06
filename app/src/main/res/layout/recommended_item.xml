@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="9dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/rec_image"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            app:riv_corner_radius="14dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/offers3"
+            tool:src="@mipmap/offers3"/>
+        <TextView
+            android:id="@+id/rec_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Popular Products"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/alice"/>
+
+        <TextView
+            android:id="@+id/rec_description"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="description"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/alice"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ratingbar"
+                tool:src="@drawable/ratingbar"
+                android:layout_marginLeft="-5dp"/>
+
+            <TextView
+                android:id="@+id/rec_rating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="5.0"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/alice"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/rec_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Price: "
+                android:textColor="@color/purple_700"
+                android:textStyle="bold"
+                android:gravity="end"
+                android:fontFamily="@font/alice"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
